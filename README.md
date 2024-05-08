@@ -9,4 +9,4 @@ Steps3 : tsc
 
 Step 4: node index.js
 
-Step 5: step external server 
+Step 5: step  setup external server 
