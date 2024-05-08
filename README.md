@@ -1,10 +1,12 @@
 # CurdGenerator-With-Tools-
 Curd Generator 
 
-Step 1: npm install 
+Step 1: npm install
 
-Steps2 : tsc
+Step 2: setup a .env File and maintain the secret in  that
 
-Step 3: node index.js
+Steps3 : tsc
 
-Step 4: step external server 
+Step 4: node index.js
+
+Step 5: step external server 
