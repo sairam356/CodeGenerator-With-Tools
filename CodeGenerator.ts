@@ -5,7 +5,7 @@ import OpenAI from "openai";
 import * as path from 'path';
 import * as fs from 'fs';
 
-export class CurdGenerator {
+export class CodeGenerator {
     availableTools: { [key: string]: Function };
     identifiedLanguage: string | null;
 
