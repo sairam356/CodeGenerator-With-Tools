@@ -4,7 +4,7 @@ import cors from "cors";
 import helmet from "helmet"
 
 import { StatusCodes } from "http-status-codes"
-import { CurdGenerator } from "./CurdGenerator";
+import { CodeGenerator } from "./CodeGenerator";
 
 
 dotevnv.config()
@@ -23,7 +23,7 @@ app.post("/analyze", async (req: Request, res: Response) => {
 
     const swaggerURI = req.body.swaggerURI;
 
-    const generator :CurdGenerator = new CurdGenerator();
+    const generator :CodeGenerator = new CodeGenerator();
     const swagger = await generator.fetchAndParseSwagger(swaggerURI);
     const response =  await generator.processSwagger(swagger, req.body.query);
     return res.status(StatusCodes.OK).send(response);
